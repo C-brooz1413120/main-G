@@ -85,6 +85,9 @@
                 0% 70% /* End of wave (highest point on the curtain, lowest reveal) */
             );
         }
+        .text-lg md:text-3xl font-bold text-white w-full truncate mb-2 md:mb-0 {
+            font-size: 9px;
+        }
     </style>
 </head>
 <body class="min-h-screen flex flex-col">
@@ -262,21 +265,6 @@
                 closeMobileMenu();
             });
         });
-    </script>
-
-    <script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/service-worker.js')
-        .then(registration => {
-          console.log('Service Worker registered with scope:', registration.scope);
-        })
-        .catch(error => {
-          console.error('Service Worker registration failed:', error);
-        });
-    });
-  }
-</script>
-    
+    </script> 
 </body>
 </html>
